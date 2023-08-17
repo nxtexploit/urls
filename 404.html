@@ -52,7 +52,7 @@
               message === "Not Found" ||
               !title ||
               !isUrl(title) ||
-              url.hostname !== location.hostname;
+              url.hostname == location.hostname;
 
             if (isInvalidUrl) {
               location.replace(homepage);
