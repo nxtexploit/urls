@@ -1,51 +1,48 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>URL shortener</title>
-  <link rel="stylesheet" href="style.css">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>nxtexploit</title>
+        <meta name="theme-color" content="#222"/>
+        <meta name="viewport" content="initial-scale=0.9">
 
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<div class="box">
-  <div class="box__ghost">
-    <div class="symbol"></div>
-    <div class="symbol"></div>
-    <div class="symbol"></div>
-    <div class="symbol"></div>
-    <div class="symbol"></div>
-    <div class="symbol"></div>
-    
-    <div class="box__ghost-container">
-      <div class="box__ghost-eyes">
-        <div class="box__eye-left"></div>
-        <div class="box__eye-right"></div>
-      </div>
-      <div class="box__ghost-bottom">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
-    <div class="box__ghost-shadow"></div>
-  </div>
-  
-  <div class="box__description">
-    <div class="box__description-container">
-      <div class="box__description-title">Invalid URL!</div>
-      <div class="box__description-text">Add the issue number after the path /urls/[] </div>
-    </div>
-    
-    <a href="https://nxtexploit.com" target="_blank" class="box__button">Go back</a>
-    
-  </div>
-  
-</div>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="script.js"></script>
+        <!-- external resources -->
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
-</body>
+        <!-- local resources -->
+        <link rel='shortcut icon' type='image/x-icon' href='images/nxtexploit.png'/>
+        <link href='/css/style.css' rel='stylesheet' type='text/css'>
+        <link href='/css/style2.css' rel='stylesheet' type='text/css'>
+    </head>
+
+    <body>  
+
+        <!-- the layer above the full screen particle.js  -->
+        <div class="panel" id="main">
+
+            
+            <p style="font-size: 40px; padding-top: 10px; margin-bottom: 5px">Invalid URL!</p>
+            <p style="padding-bottom: 5px"><i>Please add the URL ID(issue number) after the path /urls/</i></p>
+
+
+
+            <div style="margin-top: 30px" class="interactive">
+                <a href="/"><button type="button" class="btn btn-outline-secondary" style="margin-bottom: 10px">Go back Home</button></a>
+                <a href="https://nxtexploit.com/blog/"><button type="button" class="btn btn-outline-secondary" style="margin-bottom: 10px">Read blogs</button></a>
+            </div>
+
+        </div>  
+
+        <!-- the full screen particle.js in the background -->
+        <div id="particles-js"></div>
+
+        <script src="/js/script.js"></script>
+        <script src="/js/script2.js"></script>
+
+        <noscript>
+            <div class="panel"><h1>Please enable JavaScript.</h1></div>
+        </noscript>
+
+    </body>
 </html>
